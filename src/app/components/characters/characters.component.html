@@ -1,0 +1,20 @@
+<h1>{{ "characters.title" | translate }} Breaking Bad</h1>
+<div *ngIf="(characters$ | async)?.length === 0" class="spinner-container">
+  <mat-spinner></mat-spinner>
+</div>
+<div class="characters-container">
+  <div
+    class="character"
+    *ngFor="let character of characters$ | async"
+    [routerLink]="['/characters/', character.char_id]"
+  >
+    <mat-card>
+      <img
+        [src]="character?.img"
+        [alt]="character?.nickname"
+        [title]="character?.nickname"
+      />
+      <h3>{{ character?.name }}</h3>
+    </mat-card>
+  </div>
+</div>

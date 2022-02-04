@@ -1,0 +1,16 @@
+{
+  "characters": {
+    "title": "Characters of"
+  },
+  "character-view": {
+    "birthday": "Birthday",
+    "status": "Status",
+    "actor": "Actor",
+    "nickname": "Nickname",
+    "quote": "Quote",
+    "change_quote": "Change quote"
+  },
+  "error": {
+    "characters_error": "Error while loading data"
+  }
+}

@@ -1,0 +1,31 @@
+<div class="main-container">
+  <div class="left-container">
+    <div *ngIf="!character" class="loading">
+      <mat-spinner></mat-spinner>
+    </div>
+    <img *ngIf="character" [src]="character?.img" [alt]="character?.nickname" />
+    <h2>{{ character?.name }}</h2>
+  </div>
+
+  <div class="right-container">
+    <ul>
+      <li>
+        {{ "character-view.birthday" | translate }}:
+        {{ character?.birthday | date: "dd/MM/yyyy" }}
+      </li>
+      <li>
+        {{ "character-view.status" | translate }}: {{ character?.status }}
+      </li>
+      <li>
+        {{ "character-view.actor" | translate }}: {{ character?.portrayed }}
+      </li>
+      <li>
+        {{ "character-view.nickname" | translate }}: {{ character?.nickname }}
+      </li>
+      <li>{{ "character-view.quote" | translate }}: {{ quote }}</li>
+      <button mat-stroked-button class="btn" (click)="getNewQuote()">
+        {{ "character-view.change_quote" | translate }}
+      </button>
+    </ul>
+  </div>
+</div>

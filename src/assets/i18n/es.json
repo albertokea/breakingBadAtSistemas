@@ -1,0 +1,16 @@
+{
+  "characters": {
+    "title": "Personajes de"
+  },
+  "character-view": {
+    "birthday": "Cumpleaños",
+    "status": "Estado",
+    "actor": "Actor",
+    "nickname": "Apodo",
+    "quote": "Cita destacada",
+    "change_quote": "Cambiar cita"
+  },
+  "error": {
+    "characters_error": "Error al cargar los datos"
+  }
+}
