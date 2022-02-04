@@ -7,20 +7,17 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CharactersService {
-  baseUrl: string;
   characters: Character[] = [];
 
-  constructor(private httpClient: HttpClient) {
-    this.baseUrl = 'https://www.breakingbadapi.com/api/';
-  }
+  constructor(private http: HttpClient) {}
 
   getAll(): Observable<Character[]> {
-    return this.httpClient.get<Character[]>(`${this.baseUrl}characters`);
+    return this.http.get<Character[]>('characters');
   }
 
   getRandomCharacterQuote(characterName: string): Observable<CharacterQuote[]> {
-    return this.httpClient.get<CharacterQuote[]>(
-      `${this.baseUrl}quote/random?author=${characterName}`
+    return this.http.get<CharacterQuote[]>(
+      `quote/random?author=${characterName}`
     );
   }
 }
