@@ -8,21 +8,6 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent implements OnInit {
   title = 'breakingBadAtSistemas';
-  selectedLanguage: string = 'es';
-  constructor(private readonly translate: TranslateService) {}
 
-  ngOnInit(): void {
-    this.translate.setDefaultLang('es');
-  }
-
-  public changeLanguage() {
-    this.selectedLanguage === 'es'
-      ? this.setLanguage('en')
-      : this.setLanguage('es');
-  }
-
-  private setLanguage(language: string) {
-    this.translate.use(language);
-    this.selectedLanguage = language;
-  }
+  ngOnInit(): void {}
 }
