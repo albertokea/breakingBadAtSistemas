@@ -1,0 +1,27 @@
+:host ::ng-deep {
+  .nav {
+    width: 100%;
+    background-color: #343a40;
+    height: 4em;
+    position: fixed;
+    z-index: 1;
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      .title {
+        display: inline;
+        padding-top: 0.5em;
+        padding-left: 1em;
+        color: white;
+      }
+      .language-flag {
+        padding-top: 1em;
+        width: 2em;
+        height: 1em;
+        float: right;
+        cursor: pointer;
+        margin-right: 1em;
+      }
+    }
+  }
+}

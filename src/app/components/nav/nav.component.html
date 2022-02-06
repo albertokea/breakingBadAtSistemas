@@ -1,0 +1,19 @@
+<div class="nav">
+  <div class="wrapper nav-wrapper">
+    <h2 class="title">Breaking Bad AtSistemas Alberto</h2>
+    <img
+      *ngIf="selectedLanguage === 'en'"
+      class="language-flag"
+      (click)="changeLanguage()"
+      src="assets/images/spanish-flag.png"
+      alt="spanish flag"
+    />
+    <img
+      *ngIf="selectedLanguage === 'es'"
+      class="language-flag"
+      (click)="changeLanguage()"
+      src="assets/images/uk-flag.png"
+      alt="uk flag"
+    />
+  </div>
+</div>

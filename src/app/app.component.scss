@@ -4,12 +4,9 @@
     .wrapper {
       max-width: 1200px;
       margin: 0 auto;
-      .language-flag {
-        padding-top: 1em;
-        width: 2em;
-        float: right;
-        cursor: pointer;
-      }
+    }
+    .app-wrapper {
+      padding-top: 4em;
     }
   }
 }

@@ -1,19 +1,6 @@
 <div class="bg">
-  <div class="wrapper">
-    <img
-      *ngIf="selectedLanguage === 'en'"
-      class="language-flag"
-      (click)="changeLanguage()"
-      src="assets/images/spanish-flag.png"
-      alt="spanish flag"
-    />
-    <img
-      *ngIf="selectedLanguage === 'es'"
-      class="language-flag"
-      (click)="changeLanguage()"
-      src="assets/images/uk-flag.png"
-      alt="uk flag"
-    />
+  <app-nav></app-nav>
+  <div class="wrapper app-wrapper">
     <router-outlet></router-outlet>
   </div>
 </div>
